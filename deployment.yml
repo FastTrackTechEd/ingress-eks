@@ -10,6 +10,7 @@ metadata:
     alb.ingress.kubernetes.io/actions.response-503: >
       {"type":"fixed-response","fixedResponseConfig":{"contentType":"text/plain","statusCode":"503","messageBody":"Unknown Host"}}
     alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:123456789:certificate/d3cbfa3a-b150-42dc-9b86-6d9997cceca0
+    alb.ingress.kubernetes.io/security-groups: sg-05132802a4bb42050
 spec:
   ingressClassName: alb
   rules:
